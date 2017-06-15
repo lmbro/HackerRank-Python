@@ -7,12 +7,16 @@
 ##### Output Format #####
 # Print the formated string as explained above
 
+def split_and_join(line):
+    line = line.split()
+    line = '-'.join(line)
+    return line
 
+# CODE BELOW PROVIDED BY HACKERANK
 if __name__ == '__main__':
-    string = input()
-    string = string.split(' ')
-    string = '-'.join(string)
-    print(string)
+    line = input()
+    result = split_and_join(line)
+    print(result)
 
 ##### Sample Input #####
 # The first line contains a string consisting of space sparated words.
